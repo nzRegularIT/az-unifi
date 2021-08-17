@@ -60,7 +60,7 @@
             "value": "Standard_B1s"
         },
         "adminUsername": {
-            "value": "hqadmin"
+            "value": null
         },
         "adminPassword": {
             "value": null
