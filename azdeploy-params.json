@@ -1,0 +1,126 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "networkInterfaceName": {
+            "value": "unifi-control-nic-1"
+        },
+        "networkSecurityGroupName": {
+            "value": "unifi-control-nsg"
+        },
+        "sourceIpAddress": {
+            "value": null
+        },
+        "subnetName": {
+            "value": "unifi-control-subnet"
+        },
+        "virtualNetworkName": {
+            "value": "unifi-control-vnet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.2.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "unifi-control-subnet",
+                    "properties": {
+                        "addressPrefix": "10.2.0.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "unifi-control-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "unifi-control"
+        },
+        "virtualMachineComputerName": {
+            "value": "unifi-control"
+        },
+        "virtualMachineRG": {
+            "value": "Home-UniFi"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "hqadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "customData": {
+            "value": null
+        },
+        "backupVaultName": {
+            "value": "unifi-control-vault"
+        },
+        "backupFabricName": {
+            "value": "Azure"
+        },
+        "backupVaultRGName": {
+            "value": "Home-UniFi"
+        },
+        "backupVaultRGIsNew": {
+            "value": false
+        },
+        "backupPolicyName": {
+            "value": "unifi-backup-policy"
+        },
+        "backupPolicySchedule": {
+            "value": {
+                "schedulePolicyType": "SimpleSchedulePolicy",
+                "scheduleRunFrequency": "Daily",
+                "scheduleRunDays": null,
+                "scheduleRunTimes": [
+                    "2021-08-17T05:00:00.000Z"
+                ]
+            }
+        },
+        "backupPolicyRetention": {
+            "value": {
+                "retentionPolicyType": "LongTermRetentionPolicy",
+                "dailySchedule": {
+                    "retentionTimes": [
+                        "2021-08-17T05:00:00.000Z"
+                    ],
+                    "retentionDuration": {
+                        "count": 7,
+                        "durationType": "Days"
+                    }
+                },
+                "weeklySchedule": null,
+                "monthlySchedule": null,
+                "yearlySchedule": null
+            }
+        },
+        "backupPolicyTimeZone": {
+            "value": "New Zealand Standard Time"
+        },
+        "backupInstantRpRetentionRangeInDays": {
+            "value": 1
+        },
+        "backupInstantRPDetails": {
+            "value": {}
+        },
+        "backupItemName": {
+            "value": "vm;iaasvmcontainerv2;Home-UniFi;unifi-control"
+        }
+    }
+}
