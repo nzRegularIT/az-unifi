@@ -160,7 +160,7 @@
                             "sourceAddressPrefix": "[parameters('sourceIpAddress')]",
                             "sourcePortRange": "*",
                             "destinationAddressPrefix": "*",
-                            "destinationPortRange": "22"
+                            "destinationPortRange": "3478"
                         }
                     },
                     {
@@ -173,7 +173,7 @@
                             "sourceAddressPrefix": "[parameters('sourceIpAddress')]",
                             "sourcePortRange": "*",
                             "destinationAddressPrefix": "*",
-                            "destinationPortRange": "22"
+                            "destinationPortRange": "8080,8443,8880,8843,6789"
                         }
                     }
                 ]
