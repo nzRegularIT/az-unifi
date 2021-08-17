@@ -56,8 +56,8 @@
         "adminPassword": {
             "type": "secureString"
         },
-        "customData": {
-            "type": "secureString"
+        "cloud-config": {
+          "type": "string"
         },
         "backupVaultName": {
             "type": "string"
@@ -96,7 +96,8 @@
     "variables": {
         "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]",
         "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
-        "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]"
+        "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]",
+        "customData": "[concat('#include\n', parameters('cloud-config'))]"
     },
     "resources": [
         {
@@ -245,7 +246,7 @@
                             "patchMode": "ImageDefault"
                         }
                     },
-                    "customData": "[base64(parameters('customData'))]"
+                    "customData": "[base64(variables('customData'))]"
                 },
                 "diagnosticsProfile": {
                     "bootDiagnostics": {

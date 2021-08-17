@@ -65,8 +65,8 @@
         "adminPassword": {
             "value": null
         },
-        "customData": {
-            "value": null
+        "cloud-config": {
+            "value": "https://raw.githubusercontent.com/nzRegularIT/az-unifi/master/cloud-config.yaml"
         },
         "backupVaultName": {
             "value": "unifi-control-vault"
