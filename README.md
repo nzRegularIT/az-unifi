@@ -9,3 +9,7 @@ https://cloudinit.readthedocs.io/en/latest/topics/examples.html
 https://www.kenmuse.com/blog/arm-templates-and-cloud-init
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cloud-init-deep-dive
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cloud-init-troubleshooting#step-4-investigate-why-the-configuration-isnt-being-applied
+https://help.ui.com/hc/en-us/articles/204952144#4
+https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json
+https://community.ui.com/questions/unifi-apt-get-upgrade-prompt-for-backups/f2ac7635-07f4-46fe-aeda-2933af474174
+https://libre-software.net/ubuntu-automatic-updates/
