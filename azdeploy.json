@@ -154,7 +154,7 @@
                         "name": "Unifi-UDP",
                         "properties": {
                             "priority": 301,
-                            "protocol": "TCP",
+                            "protocol": "UDP",
                             "access": "Allow",
                             "direction": "Inbound",
                             "sourceAddressPrefix": "[parameters('sourceIpAddress')]",
